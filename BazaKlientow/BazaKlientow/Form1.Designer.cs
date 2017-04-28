@@ -82,8 +82,10 @@
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Frm_Loguj";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BazaKlientow - Autoryzacja";
             this.ResumeLayout(false);
             this.PerformLayout();

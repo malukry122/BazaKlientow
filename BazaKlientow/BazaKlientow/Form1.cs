@@ -41,6 +41,7 @@ namespace BazaKlientow
                 lbl_warning.Text = "";
                 if(haslo == txt_password.Text)
                 {
+                    this.Hide();
                     Frm_Panel frm_panel = new Frm_Panel();
                     frm_panel.Show();
                 }

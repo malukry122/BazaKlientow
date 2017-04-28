@@ -15,14 +15,11 @@ namespace BazaKlientow
         public Frm_Panel()
         {
             InitializeComponent();
-            Frm_Loguj frm_loguj = new Frm_Loguj();
-            frm_loguj.Visible = false;
         }
 
         private void Frm_Panel_Load(object sender, EventArgs e)
         {
-            //Frm_Loguj frm_loguj = new Frm_Loguj();
-            //frm_loguj.Close();
+            
         }
     }
 }
