@@ -1,6 +1,6 @@
 ﻿namespace BazaKlientow
 {
-    partial class Form1
+    partial class Frm_Loguj
     {
         /// <summary>
         /// Wymagana zmienna projektanta.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Loguj));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_password = new System.Windows.Forms.TextBox();
@@ -62,7 +62,7 @@
             this.txt_password.Size = new System.Drawing.Size(100, 20);
             this.txt_password.TabIndex = 2;
             // 
-            // Form1
+            // Frm_Loguj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,7 +71,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Frm_Loguj";
             this.Text = "BazaKlientow - Autoryzacja";
             this.ResumeLayout(false);
             this.PerformLayout();

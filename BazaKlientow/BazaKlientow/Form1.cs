@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BazaKlientow
 {
-    public partial class Form1 : Form
+    public partial class Frm_Loguj : Form
     {
-        public Form1()
+        public Frm_Loguj()
         {
             InitializeComponent();
         }
