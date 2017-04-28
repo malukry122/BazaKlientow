@@ -64,6 +64,12 @@
     <Compile Include="Frm_Panel.Designer.cs">
       <DependentUpon>Frm_Panel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Przegladaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Przegladaj.Designer.cs">
+      <DependentUpon>Frm_Przegladaj.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Panel.resx">
       <DependentUpon>Frm_Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Przegladaj.resx">
+      <DependentUpon>Frm_Przegladaj.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -103,6 +112,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\klient.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

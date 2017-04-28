@@ -40,18 +40,18 @@
             this.txt_model = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.cbo_silnik = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_pojemnosc = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_vin = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txt_symbol = new System.Windows.Forms.TextBox();
+            this.txt_rok = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_uwagi = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_dodaj = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -155,12 +155,12 @@
             this.cbo_silnik.TabIndex = 11;
             this.cbo_silnik.Text = "Diesel";
             // 
-            // textBox1
+            // txt_pojemnosc
             // 
-            this.textBox1.Location = new System.Drawing.Point(89, 241);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(50, 20);
-            this.textBox1.TabIndex = 13;
+            this.txt_pojemnosc.Location = new System.Drawing.Point(89, 241);
+            this.txt_pojemnosc.Name = "txt_pojemnosc";
+            this.txt_pojemnosc.Size = new System.Drawing.Size(50, 20);
+            this.txt_pojemnosc.TabIndex = 13;
             // 
             // label8
             // 
@@ -172,12 +172,12 @@
             this.label8.TabIndex = 12;
             this.label8.Text = "Pojemność";
             // 
-            // textBox2
+            // txt_vin
             // 
-            this.textBox2.Location = new System.Drawing.Point(89, 267);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(135, 20);
-            this.textBox2.TabIndex = 15;
+            this.txt_vin.Location = new System.Drawing.Point(89, 267);
+            this.txt_vin.Name = "txt_vin";
+            this.txt_vin.Size = new System.Drawing.Size(135, 20);
+            this.txt_vin.TabIndex = 15;
             // 
             // label9
             // 
@@ -189,19 +189,19 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "VIN";
             // 
-            // textBox3
+            // txt_symbol
             // 
-            this.textBox3.Location = new System.Drawing.Point(155, 214);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(59, 20);
-            this.textBox3.TabIndex = 16;
+            this.txt_symbol.Location = new System.Drawing.Point(155, 214);
+            this.txt_symbol.Name = "txt_symbol";
+            this.txt_symbol.Size = new System.Drawing.Size(59, 20);
+            this.txt_symbol.TabIndex = 16;
             // 
-            // textBox4
+            // txt_rok
             // 
-            this.textBox4.Location = new System.Drawing.Point(89, 293);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(60, 20);
-            this.textBox4.TabIndex = 18;
+            this.txt_rok.Location = new System.Drawing.Point(89, 293);
+            this.txt_rok.Name = "txt_rok";
+            this.txt_rok.Size = new System.Drawing.Size(60, 20);
+            this.txt_rok.TabIndex = 18;
             // 
             // label10
             // 
@@ -223,23 +223,13 @@
             this.label11.TabIndex = 19;
             this.label11.Text = "Klient";
             // 
-            // label1
+            // txt_uwagi
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Open Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(10, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nowe dane";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(89, 319);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(374, 107);
-            this.textBox5.TabIndex = 21;
+            this.txt_uwagi.Location = new System.Drawing.Point(89, 319);
+            this.txt_uwagi.Multiline = true;
+            this.txt_uwagi.Name = "txt_uwagi";
+            this.txt_uwagi.Size = new System.Drawing.Size(374, 107);
+            this.txt_uwagi.TabIndex = 21;
             // 
             // label12
             // 
@@ -251,33 +241,43 @@
             this.label12.TabIndex = 20;
             this.label12.Text = "Uwagi";
             // 
-            // button1
+            // btn_dodaj
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(15, 438);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 28);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Dodaj";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_dodaj.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_dodaj.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_dodaj.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btn_dodaj.Location = new System.Drawing.Point(15, 438);
+            this.btn_dodaj.Name = "btn_dodaj";
+            this.btn_dodaj.Size = new System.Drawing.Size(91, 28);
+            this.btn_dodaj.TabIndex = 22;
+            this.btn_dodaj.Text = "Dodaj";
+            this.btn_dodaj.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Open Sans", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(10, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 26);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nowe dane";
             // 
             // Frm_Dodaj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(501, 478);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.btn_dodaj);
+            this.Controls.Add(this.txt_uwagi);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txt_rok);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_symbol);
+            this.Controls.Add(this.txt_vin);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_pojemnosc);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cbo_silnik);
             this.Controls.Add(this.label7);
@@ -311,17 +311,17 @@
         private System.Windows.Forms.TextBox txt_model;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cbo_silnik;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_pojemnosc;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_vin;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txt_symbol;
+        private System.Windows.Forms.TextBox txt_rok;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_uwagi;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_dodaj;
+        private System.Windows.Forms.Label label1;
     }
 }
