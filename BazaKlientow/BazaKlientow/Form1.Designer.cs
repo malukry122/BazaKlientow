@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_password = new System.Windows.Forms.TextBox();
+            this.lbl_warning = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +49,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Open Sans", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(28, 55);
+            this.label2.Location = new System.Drawing.Point(28, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 18);
             this.label2.TabIndex = 1;
@@ -56,17 +57,28 @@
             // 
             // txt_password
             // 
-            this.txt_password.Location = new System.Drawing.Point(82, 55);
+            this.txt_password.Location = new System.Drawing.Point(82, 65);
             this.txt_password.Name = "txt_password";
             this.txt_password.PasswordChar = '*';
             this.txt_password.Size = new System.Drawing.Size(100, 20);
             this.txt_password.TabIndex = 2;
+            this.txt_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.enter);
+            // 
+            // lbl_warning
+            // 
+            this.lbl_warning.AutoSize = true;
+            this.lbl_warning.ForeColor = System.Drawing.Color.Red;
+            this.lbl_warning.Location = new System.Drawing.Point(82, 41);
+            this.lbl_warning.Name = "lbl_warning";
+            this.lbl_warning.Size = new System.Drawing.Size(0, 13);
+            this.lbl_warning.TabIndex = 3;
             // 
             // Frm_Loguj
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 94);
+            this.ClientSize = new System.Drawing.Size(284, 115);
+            this.Controls.Add(this.lbl_warning);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -83,6 +95,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_password;
+        private System.Windows.Forms.Label lbl_warning;
     }
 }
 
