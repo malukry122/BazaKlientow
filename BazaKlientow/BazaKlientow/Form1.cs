@@ -13,25 +13,41 @@ namespace BazaKlientow
 {
     public partial class Frm_Loguj : Form
     {
-        string haslo = "";
+        
         public Frm_Loguj()
         {
             InitializeComponent();
-            using (SqlConnection conn = new SqlConnection())
+            
+        }
+
+        public string getPassword()
+        {
+            lbl_error.Text = "";
+            string haslo = "";
+
+            try
             {
-                conn.ConnectionString = "Data Source=A515;Initial Catalog=Users;Integrated Security=True";
-                conn.Open();
-
-                SqlCommand command = new SqlCommand("SELECT Password FROM Login WHERE Id = 1", conn);
-
-                using (SqlDataReader reader = command.ExecuteReader())
+                using (SqlConnection conn = new SqlConnection())
                 {
-                    while (reader.Read())
+                    conn.ConnectionString = "Data Source=A515;Initial Catalog=Users;Integrated Security=True";
+                    conn.Open();
+
+                    SqlCommand command = new SqlCommand("SELECT Password FROM Login WHERE Id = 1", conn);
+
+                    using (SqlDataReader reader = command.ExecuteReader())
                     {
-                        haslo = reader.GetValue(0).ToString();
+                        while (reader.Read())
+                        {
+                            haslo = reader.GetValue(0).ToString();
+                        }
                     }
                 }
+            }catch(Exception e)
+            {
+                lbl_error.Text = "Brak połączenia z bazą danych";
             }
+
+            return haslo;
         }
 
         private void enter(object sender, KeyEventArgs e)
@@ -39,7 +55,7 @@ namespace BazaKlientow
             if(e.KeyCode == Keys.Enter)
             {
                 lbl_warning.Text = "";
-                if(haslo == txt_password.Text)
+                if(getPassword() == txt_password.Text)
                 {
                     this.Hide();
                     Frm_Panel frm_panel = new Frm_Panel();
